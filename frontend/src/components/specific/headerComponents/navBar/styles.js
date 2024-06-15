@@ -8,13 +8,15 @@ export const NavBarContainer = styled.div`
     width: 16vw;
     margin-bottom: 0.5rem;
     border-radius: 1vh;
+    background-color: ${props => props.isActive ? '#eff6ff' : 'transparent'};
 
     button {
         border: none;
         height: 4vh;
-        width: 16vw;
+        width: 15.5vw;
         font-size: 1.2rem;
         background-color: transparent;
+        color: ${props => props.isActive ? '#3e90f8' : 'inherit'};
 
         svg {
             font-size: 1.18vw;

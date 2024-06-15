@@ -5,6 +5,7 @@ export const SubMenuContainer = styled.div`
     flex-direction: column;
     width: 90%;
     font-size: 1.18rem;
+    color: ${props => props.isActive ? '#3e90f8' : 'inherit'};
 
     .link {
         text-decoration: none;

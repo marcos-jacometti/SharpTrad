@@ -1,10 +1,13 @@
 import React from "react";
 import { NavBarContainer } from "./styles";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function NavBar({onClick, link, svg, title, arrow, children}){
+    const location = useLocation();
+    const isActive = location.pathname === link;
+
     return(
-        <NavBarContainer>
+        <NavBarContainer isActive={isActive}>
             <button onClick={onClick}>
                 <Link to={link} className="link">
                     {svg}
