@@ -8,6 +8,7 @@ import { GoGear } from "react-icons/go";
 import { IoFileTrayFullOutline, IoNotificationsOutline } from "react-icons/io5";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import SubMenu from "../../specific/headerComponents/subMenu";
+import HelpCenter from "../../specific/headerComponents/helpCenter";
 
 export default function Header() {
     const [visibility, setVisibility] = useState({
@@ -47,6 +48,7 @@ export default function Header() {
                 </NavBar>
                 <NavBar svg={<IoNotificationsOutline />} title="Notificações" />
             </nav>
+            <HelpCenter />
         </HeaderContainer>
     );
 }
