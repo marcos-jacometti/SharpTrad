@@ -7,7 +7,7 @@ export default function NavBar({onClick, link, svg, title, arrow, children}){
     const isActive = location.pathname === link;
 
     return(
-        <NavBarContainer isActive={isActive}>
+        <NavBarContainer $isActive={isActive}>
             <button onClick={onClick}>
                 <Link to={link} className="link">
                     {svg}

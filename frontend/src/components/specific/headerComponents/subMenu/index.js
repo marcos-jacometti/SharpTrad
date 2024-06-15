@@ -7,7 +7,7 @@ export default function SubMenu({link, linkTwo, title, titleTwo}){
     const isActive = location.pathname === link;
 
     return(
-        <SubMenuContainer isActive={isActive}>
+        <SubMenuContainer $isActive={isActive}>
             <Link to={link} className="link">
                 {title}
             </Link>
