@@ -27,26 +27,26 @@ export default function Header() {
         <HeaderContainer>
             <Logo />
             <nav>
-                <NavBar svg={<LuHome />} title="Visão geral" />
-                <NavBar svg={<CgMouse />} title="Sinais de jogos" />
-                <NavBar
+                <NavBar link="/" svg={<LuHome />} title="Visão geral" />
+                <NavBar link="/bets" svg={<CgMouse />} title="Sinais de jogos" />
+                <NavBar 
                     onClick={() => handleToggle('settings')}
                     svg={<GoGear />}
                     title="Configurações do app"
                     arrow={visibility.settings ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 >
-                    {visibility.settings && <SubMenu link="Planos" linkTwo="Configurações gerais" />}
+                    {visibility.settings && <SubMenu link="/plans" linkTwo="/configs" title="Planos" titleTwo="Configurações gerais" />}
                 </NavBar>
-                <NavBar svg={<LuUserCircle2 />} title="Usuário" />
+                <NavBar link="/user" svg={<LuUserCircle2 />} title="Usuário" />
                 <NavBar
                     onClick={() => handleToggle('resources')}
                     svg={<IoFileTrayFullOutline />}
                     title="Outros recursos"
                     arrow={visibility.resources ? <IoIosArrowUp /> : <IoIosArrowDown />}
                 >
-                    {visibility.resources && <SubMenu link="Transmissões" linkTwo="Integrações" />}
+                    {visibility.resources && <SubMenu link="/transmitions" linkTwo="/integrations" title="Transmissões" titleTwo="Integrações" />}
                 </NavBar>
-                <NavBar svg={<IoNotificationsOutline />} title="Notificações" />
+                <NavBar link="/notifications" svg={<IoNotificationsOutline />} title="Notificações" />
             </nav>
             <HelpCenter />
         </HeaderContainer>
