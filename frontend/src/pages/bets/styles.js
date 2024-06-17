@@ -29,7 +29,7 @@ export const Container = styled.div`
         display: flex;
         width: 68vw;
         height: 10vh;
-        border-bottom: 0.1vh solid #000;
+        border-bottom: 0.1vh solid #e7e8eb;
 
         svg {
             font-size: 1.5vw;
@@ -38,5 +38,10 @@ export const Container = styled.div`
 `;
 
 export const Games = styled.div`
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 85vh;
+    width: 68vw;
+    flex-wrap: wrap;
 `;
