@@ -2,18 +2,19 @@ import React from "react";
 import { SubMenuContainer } from "./styles";
 import { Link, useLocation } from "react-router-dom";
 
-export default function SubMenu({link, linkTwo, title, titleTwo}){
-    const location = useLocation();
-    const isActive = location.pathname === link;
+export default function SubMenu({ link, linkTwo, title, titleTwo }) {
+  const location = useLocation();
+  const isActiveLink = location.pathname === link;
+  const isActiveLinkTwo = location.pathname === linkTwo;
 
-    return(
-        <SubMenuContainer $isActive={isActive}>
-            <Link to={link} className="link">
-                {title}
-            </Link>
-            <Link to={linkTwo} className="link">
-                {titleTwo}
-            </Link>
-        </SubMenuContainer>
-    );
+  return (
+    <SubMenuContainer>
+      <Link to={link} className={isActiveLink? "link active" : "link"}>
+        {title}
+      </Link>
+      <Link to={linkTwo} className={isActiveLinkTwo? "link active" : "link"}>
+        {titleTwo}
+      </Link>
+    </SubMenuContainer>
+  );
 }
