@@ -18,9 +18,9 @@ export default function Bets(){
                     <Games>
                         <Game background={images['mines.png']} name="Mines" />
                         <Game background={images['tiger.png']} name="Fortune tiger" />
+                        <Game background={images['roulette.png']} name="Roleta A" />
                         <Game background={images['penalty.png']} name="Penalty Shootout" />
                         <Game background={images['rabbit.png']} name="Fortune Rabbit" />
-                        <Game background={images['roulette.png']} name="Roleta A" />
                         <Game background={images['roletaBrasileira.png']} name="Roleta Brasileira" />
                         <Game background={images['ninja.png']} name="Fruit Ninja" />
                         <Game background={images['mouse.png']} name="Fortune Mouse" />
