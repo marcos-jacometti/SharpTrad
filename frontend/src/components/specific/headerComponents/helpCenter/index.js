@@ -11,7 +11,7 @@ export default function HelpCenter(){
             </CallLogo>
             <h2>Central de ajuda</h2>
             <span>Tire suas dúvidas e fale com nosso suporte</span>
-            <Button title="Suporte"/>
+            <Button link="https://t.me/SharpBotSuporte" title="Suporte"/>
         </HelpContainer>
     );
 }
