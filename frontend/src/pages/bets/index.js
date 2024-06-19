@@ -17,14 +17,14 @@ export default function Bets(){
                     </div>
                     <Games>
                         <Game background={images['mines.png']} name="Mines" />
-                        <Game background={images['mines.png']} name="Fortune tiger" />
-                        <Game background={images['mines.png']} name="Penalty Shootout" />
-                        <Game background={images['mines.png']} name="Fortune Rabbit" />
-                        <Game background={images['mines.png']} name="Roleta A" />
-                        <Game background={images['mines.png']} name="Roleta Brasileira" />
-                        <Game background={images['mines.png']} name="Fruit Ninja" />
-                        <Game background={images['mines.png']} name="Fortune Mouse" />
-                        <Game background={images['mines.png']} name="Spaceman" />
+                        <Game background={images['tiger.png']} name="Fortune tiger" />
+                        <Game background={images['penalty.png']} name="Penalty Shootout" />
+                        <Game background={images['rabbit.png']} name="Fortune Rabbit" />
+                        <Game background={images['roulette.png']} name="Roleta A" />
+                        <Game background={images['roletaBrasileira.png']} name="Roleta Brasileira" />
+                        <Game background={images['ninja.png']} name="Fruit Ninja" />
+                        <Game background={images['mouse.png']} name="Fortune Mouse" />
+                        <Game background={images['spaceman.png']} name="Spaceman" />
                     </Games>
                 </Container>
             </GamesContent>
