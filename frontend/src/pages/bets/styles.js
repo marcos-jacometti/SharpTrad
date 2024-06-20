@@ -37,11 +37,30 @@ export const Container = styled.div`
     }
 `;
 
-export const Games = styled.div`
+export const BetsSignals = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    height: 85vh;
+    max-height: 80vh;
     width: 68vw;
-    flex-wrap: wrap;
+    gap: 3vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1.5rem;
+    box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+        width: 0.4vw;
+        border-radius: 1vh;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 1vh;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #f5f5f5;
+        border-radius: 1vh;
+    }
 `;

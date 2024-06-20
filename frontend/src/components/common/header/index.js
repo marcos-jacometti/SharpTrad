@@ -3,7 +3,7 @@ import { HeaderContainer } from "./styles";
 import Logo from "../../specific/headerComponents/logo";
 import NavBar from "../../specific/headerComponents/navBar";
 import { LuHome, LuUserCircle2 } from "react-icons/lu";
-import { CgMouse } from "react-icons/cg";
+import { MdOutlineAttachMoney } from "react-icons/md";
 import { GoGear } from "react-icons/go";
 import { IoFileTrayFullOutline, IoNotificationsOutline } from "react-icons/io5";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
@@ -28,7 +28,7 @@ export default function Header() {
             <Logo />
             <nav>
                 <NavBar link="/" svg={<LuHome />} title="Visão geral" />
-                <NavBar link="/bets" svg={<CgMouse />} title="Sinais de jogos" />
+                <NavBar link="/bets" svg={<MdOutlineAttachMoney />} title="Lista de Sinais" />
                 <NavBar 
                     onClick={() => handleToggle('settings')}
                     svg={<GoGear />}
