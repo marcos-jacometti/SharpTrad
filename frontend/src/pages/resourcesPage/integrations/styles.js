@@ -39,8 +39,7 @@ export const Integration = styled.div`
     }
 
     span {
-        max-width: 18vw;
-        text-align: center;
+        max-width: 20vw;
         line-height: 2.8vh;
         font-size: 0.8vw;
     }

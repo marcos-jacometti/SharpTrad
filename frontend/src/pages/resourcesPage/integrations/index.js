@@ -14,7 +14,7 @@ export default function Integrations(){
                         <h2>SharpBot Intelligence</h2>
                     </div>
                     <span>
-                        SharpBot é uma IA de alto desempenho especializada na análise de sinais de jogos de cassino. Com algoritmos avançados e uma capacidade analítica impressionante, SharpBot monitora, processa e interpreta dados em tempo real para identificar padrões e oportunidades estratégicas, ajudando jogadores e operadores a tomarem decisões informadas e otimizadas. Sua precisão e eficiência fazem do SharpBot um parceiro indispensável no mundo dos jogos de cassino.
+                        O SharpBot é uma inteligência artificial avançada especializada em sinais de day trading para opções binárias. Projetado para operar com alta performance analítica, o SharpBot utiliza algoritmos sofisticados e análises de dados em tempo real para identificar oportunidades de trading com precisão e eficiência. Com sua capacidade de processar grandes volumes de informações e detectar padrões complexos, o SharpBot oferece aos traders uma vantagem significativa no mercado, proporcionando sinais confiáveis e otimizados para maximizar os lucros.
                     </span>
                 </Integration>
             </Container>
