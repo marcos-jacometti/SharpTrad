@@ -13,3 +13,41 @@ export const Container = styled.div`
         background-color: rgba(0, 0, 0, 0.5);
     `}
 `;
+
+export const Up = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #fff;
+    height: 55vh;
+    width: 35vw;
+    border-radius: 2vh;
+    position: relative;
+`;
+
+export const Close = styled.div`
+    position: absolute;
+    right: 0.8vw;
+    top: 1vh;
+
+    svg {
+        font-size: 2vw;
+    }
+`;
+
+export const Info = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 35vh;
+    
+    button {
+        background-color: #3e90f8;
+
+        :hover {
+            color: #000;
+        }
+    }
+`;

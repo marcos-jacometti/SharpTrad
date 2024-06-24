@@ -27,7 +27,7 @@ export default function User(){
                             <button onClick={handleBtnClick}>
                                 <h3>Ainda não tem uma conta? Clique aqui!</h3>
                             </button>
-                            {visible && <SignUp visible={visible} />}
+                            {visible && <SignUp visible={visible} setVisible={setVisible} />}
                         </Btn>
                     </div>
                 </UserLogin>
