@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import img from "../../assets/images/announce.png"
 
 export const Container = styled.div`
     display: flex;
@@ -6,13 +7,29 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 82vw;
-    height: 100vh;
-    padding: 2rem;
+    height: auto;
+    padding: 8rem;
     margin-left: 18vw;
+`;
+
+export const Boards = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    max-width: 70vw;
+    height: auto;
+`;
+
+export const Announcement = styled.div`
+    width: 70vw;
+    height: 10vh;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 2vh;
+    background: url(${img}) center / cover;
 `;
 
 export const Board = styled.div`
@@ -20,7 +37,7 @@ export const Board = styled.div`
     flex-direction: column;
     background-color: #fff;
     border-radius: 1vh;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 30px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 2px 8px 0 rgba(0, 0, 0, 0.3);
     height: ${props => props.$height};
     width: ${props => props.$width};
 `;
