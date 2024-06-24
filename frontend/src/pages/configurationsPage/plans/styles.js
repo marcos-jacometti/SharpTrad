@@ -11,5 +11,6 @@ export const Container = styled.div`
     align-items: center;
     width: 82vw;
     height: 100vh;
+    margin-left: 18vw;
 `;
 

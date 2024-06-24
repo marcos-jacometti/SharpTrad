@@ -10,6 +10,7 @@ export const GamesContent = styled.div`
     align-items: center;
     width: 82vw;
     height: 100vh;
+    margin-left: 18vw;
 `;
 
 export const Container = styled.div`
