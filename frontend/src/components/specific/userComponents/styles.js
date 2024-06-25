@@ -21,9 +21,10 @@ export const Up = styled.div`
     flex-direction: column;
     background-color: #fff;
     height: 55vh;
-    width: 35vw;
+    width: 20vw;
     border-radius: 2vh;
     position: relative;
+    margin-left: 18vw;
 `;
 
 export const Close = styled.div`
