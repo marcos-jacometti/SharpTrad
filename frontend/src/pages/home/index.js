@@ -27,7 +27,7 @@ export default function HomeContainer(){
                         <h3>Número de Sinais por Plano</h3>
                         <ColumnChart />
                     </Board>
-                    <Link>
+                    <Link to="/bets">
                         <Board $height="70vh" $width="70vw" $background={img} />
                     </Link>
                 </Boards>
