@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import RadialChart from "../../components/common/charts/radialChart";
 import LineChart from "../../components/common/charts/lineChart";
 import ColumnChart from "../../components/common/charts/columnChart";
+import img from "../../assets/images/1.png"
 
 export default function HomeContainer(){
     return(
@@ -26,9 +27,9 @@ export default function HomeContainer(){
                         <h3>Número de Sinais por Plano</h3>
                         <ColumnChart />
                     </Board>
-                    <Board $height="70vh" $width="70vw">
-                        <h3></h3>
-                    </Board>
+                    <Link>
+                        <Board $height="70vh" $width="70vw" $background={img} />
+                    </Link>
                 </Boards>
             </Content>
         </Container>

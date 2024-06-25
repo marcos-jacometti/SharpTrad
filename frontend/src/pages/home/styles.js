@@ -11,7 +11,7 @@ export const Content = styled.div`
     align-items: center;
     width: 82vw;
     height: auto;
-    padding: 8rem;
+    padding: 6rem;
     margin-left: 18vw;
 `;
 
@@ -19,7 +19,7 @@ export const Boards = styled.div`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2vw;
+    gap: 1vw;
     max-width: 70vw;
     height: auto;
 `;
@@ -42,6 +42,7 @@ export const Board = styled.div`
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 2px 8px 0 rgba(0, 0, 0, 0.3);
     height: ${props => props.$height};
     width: ${props => props.$width};
+    background: url(${props => props.$background}) center / cover;
 
     h3 {
         max-width: 10vw;
