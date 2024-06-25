@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Description, List } from "./styles";
 
-export default function PayContainer({title, h4, h1, h3, items, button}){
+export default function PayContainer({title, h4, h2, h3, items, button}){
     return(
         <Container>
             <Description>
-                <h2>{title}</h2>
+                <h3>{title}</h3>
                 <div>
                     <h4>{h4}</h4>
-                    <h1>{h1}</h1>
+                    <h2>{h2}</h2>
                     <h3>{h3}</h3>
                 </div>
             </Description>

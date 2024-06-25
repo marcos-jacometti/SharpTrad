@@ -42,7 +42,7 @@ export const Info = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 35vh;
+    height: 40vh;
     
     button {
         background-color: #3e90f8;

@@ -12,11 +12,11 @@ export default function Plans(){
                 <PayContainer title="FREE" 
                     items={["03 Sinais Diários", "SharBot Intelligence", "Suporte Exclusivo"]}
                 />
-                <PayContainer title="PRO" h4="12x de" h1="R$33,32" h3="à vista R$399,99" 
+                <PayContainer title="PRO" h4="12x de" h2="R$33,32" h3="à vista R$399,99" 
                     items={["05 Sinais Diários", "SharBot Intelligence", "Gerenciamento de Banca", "Estratégia Sharp", "Suporte Exclusivo"]}
                     button={<Button title="ASSINAR"/>}
                 />
-                <PayContainer title="EXPERT" h4="12x de" h1="R$41,66" h3="à vista R$499,99" 
+                <PayContainer title="EXPERT" h4="12x de" h2="R$41,66" h3="à vista R$499,99" 
                     items={["10 Sinais Diários", "SharBot Intelligence", "Gerenciamento de Banca", "Estratégia Sharp", "Suporte Exclusivo"]}
                     button={<Button title="ASSINAR"/>}
                 />

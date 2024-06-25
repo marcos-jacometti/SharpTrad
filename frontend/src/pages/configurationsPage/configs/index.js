@@ -12,7 +12,7 @@ export default function MainConfigs(){
                 <Configs>
                     <div className="title">
                         <GoGear />
-                        <h2>Configurações</h2>
+                        <h3>Configurações</h3>
                     </div>
                     <Tags>
                         <Tag title="Corretora:" description="Avalon" />

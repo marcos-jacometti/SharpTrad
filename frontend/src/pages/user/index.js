@@ -18,14 +18,14 @@ export default function User(){
             <Header />
             <Container>
                 <UserLogin>
-                    <h2>Já tem uma conta? Faça seu login</h2>
+                    <h3>Já tem uma conta? Faça seu login</h3>
                     <div className="login">
                         <Input icon={<FaUserAlt />} placeholder="Usuário" type="text" />
                         <Input icon={<FaLock />} placeholder="Senha" type="password" />
                         <Button title="ENTRAR"/>
                         <Btn>
                             <button onClick={handleBtnClick}>
-                                <h3>Ainda não tem uma conta? Clique aqui!</h3>
+                                <h4>Ainda não tem uma conta? Clique aqui!</h4>
                             </button>
                             {visible && <SignUp visible={visible} setVisible={setVisible} />}
                         </Btn>

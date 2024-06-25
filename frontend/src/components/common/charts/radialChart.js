@@ -36,7 +36,7 @@ export default function Chart() {
                 options={options}
                 series={series}
                 type="radialBar"
-                height={500}
+                height={310}
                 width={400}
             />
         </div>

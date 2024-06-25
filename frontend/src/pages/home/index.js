@@ -16,15 +16,15 @@ export default function HomeContainer(){
                     <Link to="https://trade.avalonbroker.io/register?aff=415320&aff_model=revenue&afftrack="><Announcement /></Link>
                     <Board $height="50vh" $width="50vw"></Board>
                     <Board $height="50vh" $width="17vw">
-                        <h3>Assertividade dos últimos 30 dias (Sinais SharpBot)</h3>
+                        <h5>Assertividade dos últimos 30 dias (Sinais SharpBot)</h5>
                         <RadialChart />
                     </Board>
                     <Board $height="40vh" $width="30vw">
-                        <h3>Número de Sinais SharpBot</h3>
+                        <h5>Número de Sinais SharpBot</h5>
                         <LineChart />
                     </Board>
                     <Board $height="40vh" $width="30vw">
-                        <h3>Número de Sinais por Plano</h3>
+                        <h5>Número de Sinais por Plano</h5>
                         <ColumnChart />
                     </Board>
                     <Link to="/bets">

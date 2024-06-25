@@ -4,7 +4,7 @@ export const NavBarContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2vh;
     width: 16vw;
     margin-bottom: 0.5rem;
     border-radius: 1vh;
@@ -12,9 +12,9 @@ export const NavBarContainer = styled.div`
 
     button {
         border: none;
-        height: 4vh;
+        height: 3.2vh;
         width: 15.5vw;
-        font-size: 1.2rem;
+        font-size: 0.9vw;
         background-color: transparent;
         color: ${props => props.$isActive ? '#3e90f8' : 'inherit'};
 

@@ -11,19 +11,19 @@ export default function Bet({}){
             </Background>
             <Details>
                 <div>
-                    <h3>GBP/JPY</h3>
+                    <h5>GBP/JPY</h5>
                 </div>
                 <div>
                     <BsHourglassSplit />
-                    <h3>Tempo de Expiração: 5 min</h3>
+                    <h5>Tempo de Expiração: 5 min</h5>
                 </div>
                 <div>
                     <BsAlarmFill />
-                    <h3>Horário da Entrada: 12h15</h3>
+                    <h5>Horário da Entrada: 12h15</h5>
                 </div>
                 <div>
                     <IoWarning />
-                    <h3>Utilizar até 2 gales</h3>
+                    <h5>Utilizar até 2 gales</h5>
                 </div>
             </Details>
         </Container>

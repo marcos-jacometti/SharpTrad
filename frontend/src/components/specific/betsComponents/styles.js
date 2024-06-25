@@ -7,7 +7,7 @@ export const Container = styled.div`
     width: 65vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 1vh;
-    padding: 1rem;
+    padding: 1vh;
 
     &:hover {
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 30px 0 rgba(0, 0, 0, 0.3);
@@ -25,7 +25,7 @@ export const Background = styled.div`
     svg {
         stroke-width: 0.1vh;
         color: green;
-        font-size: 2.5vw;
+        font-size: 2.2vw;
     }
 `;
 

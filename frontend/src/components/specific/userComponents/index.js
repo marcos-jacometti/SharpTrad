@@ -15,7 +15,7 @@ export default function SignUp({visible, setVisible}){
                         <IoClose />
                     </button>
                 </Close>
-                <h2>Crie agora sua conta!</h2>
+                <h3>Crie agora sua conta!</h3>
                 <Info>
                     <Input icon={<FaUserAlt />} placeholder="Nome de usuário" type="text" />
                     <Input icon={<FaLock />} placeholder="Digite sua senha" type="password" />

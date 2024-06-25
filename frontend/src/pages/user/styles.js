@@ -23,7 +23,7 @@ export const UserLogin = styled.div`
     background-color: #fff;
     border-radius: 1vh;
 
-    h2 {
+    h3 {
         max-width: 12vw;
         text-align: center;
     }
@@ -33,7 +33,7 @@ export const UserLogin = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        height: 25vh;
+        height: 30vh;
     }
 `;
 

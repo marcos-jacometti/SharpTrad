@@ -4,12 +4,12 @@ export const SubMenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 90%;
-  font-size: 1.18rem;
+  font-size: 0.85vw;
 
  .link {
     text-decoration: none;
     height: 5vh;
-    padding: 1rem;
+    padding: 1vh;
     color: inherit;
   }
 

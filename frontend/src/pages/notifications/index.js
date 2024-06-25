@@ -11,7 +11,7 @@ export default function Notifications(){
                 <Notify>
                     <div className="title">
                         <MdOutlineNotificationsActive />
-                        <h2>Notificações</h2>
+                        <h3>Notificações</h3>
                     </div>
                 </Notify>
             </NotifyContainer>

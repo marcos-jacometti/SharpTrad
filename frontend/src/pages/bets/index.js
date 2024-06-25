@@ -12,7 +12,7 @@ export default function Bets(){
                 <Container>
                     <div className="title">
                         <IoExtensionPuzzleOutline />
-                        <h2>Sinais Automáticos</h2>
+                        <h3>Sinais Automáticos</h3>
                     </div>
                     <BetsSignals>
                         <Bet />

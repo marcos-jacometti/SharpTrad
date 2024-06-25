@@ -10,7 +10,7 @@ export default function Transmitions(){
             <Container>
                 <Live>
                     <RiLiveLine />
-                    <h2>Nenhuma transmissão disponível</h2>
+                    <h3>Nenhuma transmissão disponível</h3>
                 </Live>
             </Container>
         </TransmitionsContainer>

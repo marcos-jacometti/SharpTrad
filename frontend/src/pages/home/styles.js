@@ -11,7 +11,7 @@ export const Content = styled.div`
     align-items: center;
     width: 82vw;
     height: auto;
-    padding: 6rem;
+    padding: 10vh;
     margin-left: 18vw;
 `;
 
@@ -44,8 +44,8 @@ export const Board = styled.div`
     width: ${props => props.$width};
     background: url(${props => props.$background}) center / cover;
 
-    h3 {
-        max-width: 10vw;
+    h5 {
+        max-width: 14vw;
         text-align: center;
     }
 `;

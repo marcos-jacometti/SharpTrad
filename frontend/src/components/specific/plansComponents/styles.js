@@ -27,7 +27,7 @@ export const Description = styled.div`
     div {
         text-align: center;
 
-        h1 {
+        h2 {
             color: #3e90f8;
         }
     }

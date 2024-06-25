@@ -9,7 +9,7 @@ export default function HelpCenter(){
             <CallLogo>
                 <BiSupport />
             </CallLogo>
-            <h2>Central de ajuda</h2>
+            <h3>Central de ajuda</h3>
             <span>Tire suas dúvidas e fale com nosso suporte</span>
             <Button link="https://t.me/SharpBotSuporte" title="Suporte"/>
         </HelpContainer>
