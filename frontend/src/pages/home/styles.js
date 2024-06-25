@@ -34,10 +34,17 @@ export const Announcement = styled.div`
 
 export const Board = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
     background-color: #fff;
     border-radius: 1vh;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 2px 8px 0 rgba(0, 0, 0, 0.3);
     height: ${props => props.$height};
     width: ${props => props.$width};
+
+    h3 {
+        max-width: 10vw;
+        text-align: center;
+    }
 `;
