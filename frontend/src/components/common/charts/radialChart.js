@@ -1,7 +1,7 @@
 import React from "react";
 import ApexChart from "react-apexcharts";
 
-export default function Chart() {
+export default function Chart({fontSize}) {
     const options = {
         chart: {
             type: 'radialBar'
@@ -16,7 +16,7 @@ export default function Chart() {
                     showOn: 'always',
                     value: {
                         color: '#000',
-                        fontSize: '1.3vw',
+                        fontSize: `${fontSize}`,
                         show: true
                     }
                 }

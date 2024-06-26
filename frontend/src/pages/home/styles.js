@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import img from "../../assets/images/announce.png"
-import { containerMediaStyles, contentMediaStyles } from "./responsive";
+import { annoucementMediaStyles, boardMediaStyles, boardsMediaStyles, containerMediaStyles, contentMediaStyles } from "./responsive";
 
 export const Container = styled.div`
     display: flex;
@@ -25,6 +25,7 @@ export const Boards = styled.div`
     gap: 1vw;
     max-width: 70vw;
     height: auto;
+    ${boardsMediaStyles};
 `;
 
 export const Announcement = styled.div`
@@ -33,6 +34,7 @@ export const Announcement = styled.div`
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 2px 8px 0 rgba(0, 0, 0, 0.3);
     border-radius: 2vh;
     background: url(${img}) center / cover;
+    ${annoucementMediaStyles};
 `;
 
 export const Board = styled.div`
@@ -46,6 +48,7 @@ export const Board = styled.div`
     height: ${props => props.$height};
     width: ${props => props.$width};
     background: url(${props => props.$background}) center / cover;
+    ${boardMediaStyles};
 
     h5 {
         max-width: 14vw;
