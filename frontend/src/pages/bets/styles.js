@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { betsContainerMediaStyles, betsSignalsMediaStyles, containerMediaStyles, gamesContentMediaStyles, svgMediaStyles, titleMediaStyles } from "./responsive";
 
 export const BetsContainer = styled.div`
     display: flex;
+    ${betsContainerMediaStyles};
 `;
 
 export const GamesContent = styled.div`
@@ -11,6 +13,7 @@ export const GamesContent = styled.div`
     width: 82vw;
     height: 100vh;
     margin-left: 18vw;
+    ${gamesContentMediaStyles};
 `;
 
 export const Container = styled.div`
@@ -21,6 +24,7 @@ export const Container = styled.div`
     background-color: #fff;
     border-radius: 1vh;
     height: 90vh;
+    ${containerMediaStyles};
 
     .title {
         display: flex;
@@ -31,9 +35,11 @@ export const Container = styled.div`
         width: 68vw;
         height: 10vh;
         border-bottom: 0.1vh solid #e7e8eb;
+        ${titleMediaStyles};
 
         svg {
             font-size: 1.5vw;
+            ${svgMediaStyles};
         }
     }
 `;
@@ -49,6 +55,7 @@ export const BetsSignals = styled.div`
     overflow-x: hidden;
     padding: 1.5rem;
     box-sizing: border-box;
+    ${betsSignalsMediaStyles};
 
     &::-webkit-scrollbar {
         width: 0.4vw;
