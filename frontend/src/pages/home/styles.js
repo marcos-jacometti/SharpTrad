@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import img from "../../assets/images/announce.png"
+import { containerMediaStyles, contentMediaStyles } from "./responsive";
 
 export const Container = styled.div`
     display: flex;
+    ${containerMediaStyles}
 `;
 
 export const Content = styled.div`
@@ -13,6 +15,7 @@ export const Content = styled.div`
     height: auto;
     padding: 10vh;
     margin-left: 18vw;
+    ${contentMediaStyles}
 `;
 
 export const Boards = styled.div`
