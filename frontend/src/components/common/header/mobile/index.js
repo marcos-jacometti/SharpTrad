@@ -19,7 +19,7 @@ export default function MobileHeader(){
                 </button>
                 {visible && <NavMobile visible={visible} setVisible={setVisible} />}
             </Menu>
-            <Logo height="7vh" width="60vw" />
+            <Logo height="9.5vh" width="60vw" />
         </Container>
     );
 }
