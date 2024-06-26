@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { buttonMediaStyles, navBarContainerMediaStyles, svgMediaStyles } from "./responsive";
 
 export const NavBarContainer = styled.div`
     display: flex;
@@ -9,6 +10,7 @@ export const NavBarContainer = styled.div`
     margin-bottom: 0.5rem;
     border-radius: 1vh;
     background-color: ${props => props.$isActive ? '#eff6ff' : 'transparent'};
+    ${navBarContainerMediaStyles};
 
     button {
         border: none;
@@ -17,9 +19,11 @@ export const NavBarContainer = styled.div`
         font-size: 0.9vw;
         background-color: transparent;
         color: ${props => props.$isActive ? '#3e90f8' : 'inherit'};
+        ${buttonMediaStyles};
 
         svg {
             font-size: 1.18vw;
+            ${svgMediaStyles};
         }
     }
 

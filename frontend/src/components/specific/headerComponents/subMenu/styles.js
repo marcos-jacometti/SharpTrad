@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import { activeMediaStyles, subMenuContainerMediaStyles } from "./responsive";
 
 export const SubMenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 90%;
   font-size: 0.85vw;
+  ${subMenuContainerMediaStyles};
 
  .link {
     text-decoration: none;
@@ -15,5 +17,6 @@ export const SubMenuContainer = styled.div`
 
  .link.active {
     color: #3e90f8;
+    ${activeMediaStyles};
   }
 `;

@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import { HeaderContainer } from "./styles";
-import Logo from "../../../specific/headerComponents/logo";
-import NavBar from "../../../specific/headerComponents/navBar";
+import { Container, Close } from "./styles";
+import { IoClose } from "react-icons/io5";
+import NavBar from "../navBar/index";
 import { LuHome, LuUserCircle2 } from "react-icons/lu";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import { GoGear } from "react-icons/go";
 import { IoFileTrayFullOutline, IoNotificationsOutline } from "react-icons/io5";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import SubMenu from "../../../specific/headerComponents/subMenu";
-import HelpCenter from "../../../specific/headerComponents/helpCenter";
+import SubMenu from "../subMenu/index";
+import { BiSupport } from "react-icons/bi";
 
-export default function DesktopHeader() {
+export default function NavMobile({visible, setVisible}){
     const [visibility, setVisibility] = useState({
         settings: false,
         resources: true
@@ -23,9 +23,13 @@ export default function DesktopHeader() {
         }));
     };
 
-    return (
-        <HeaderContainer>
-            <Logo height="12vh" width="16vw" />
+    return(
+        <Container $visible={visible}>
+            <Close>
+                <button onClick={() => setVisible(false)}>
+                    <IoClose />
+                </button>
+            </Close>
             <nav>
                 <NavBar link="/" svg={<LuHome />} title="Visão geral" />
                 <NavBar link="/bets" svg={<MdOutlineAttachMoney />} title="Lista de Sinais" />
@@ -47,8 +51,9 @@ export default function DesktopHeader() {
                     {visibility.resources && <SubMenu link="/transmitions" linkTwo="/integrations" title="Transmissões" titleTwo="Integrações" />}
                 </NavBar>
                 <NavBar link="/notifications" svg={<IoNotificationsOutline />} title="Notificações" />
+                <NavBar link="https://t.me/SharpBotSuporte" svg={<BiSupport />} title="Fale com nosso Suporte" />
             </nav>
-            <HelpCenter />
-        </HeaderContainer>
-    );
+
+        </Container>
+    )
 }

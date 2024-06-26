@@ -1,8 +1,8 @@
 import React from "react";
 import { LogoContainer } from "./styles";
 
-export default function Logo(){
+export default function Logo({height, width}){
     return(
-        <LogoContainer />
+        <LogoContainer height={height} width={width} />
     );
 }
