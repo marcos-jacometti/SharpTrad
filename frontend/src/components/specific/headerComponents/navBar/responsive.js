@@ -15,5 +15,7 @@ export const buttonMediaStyles = css`
 `;
 
 export const svgMediaStyles = css`
-    font-size: 4.5vw;
+    @media ${device.mobile}{
+        font-size: 4.5vw;
+    }
 `;
