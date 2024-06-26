@@ -38,16 +38,16 @@ export const Details = styled.div`
     justify-content: space-around;
     width: 58vw;
     ${detailsMediaStyles};
+`;
 
-    div {
-        display: flex;
-        align-items: center;
-        gap: 0.4vw;
-        ${divMediaStyles};
-        
-        svg {
-            font-size: 1vw;
-            ${svgDetailsMediaStyles};
-        }
+export const DivStyled = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 0.4vw;
+    ${divMediaStyles};
+
+    svg {
+        font-size: 1vw;
+        ${svgDetailsMediaStyles};
     }
 `;

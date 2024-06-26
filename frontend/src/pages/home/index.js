@@ -2,9 +2,9 @@ import React from "react";
 import Header from "../../components/common/header";
 import { Announcement, Board, Boards, Container, Content } from "./styles";
 import { Link } from "react-router-dom";
-import RadialChart from "../../components/common/charts/radialChart";
-import LineChart from "../../components/common/charts/lineChart";
-import ColumnChart from "../../components/common/charts/columnChart";
+import RadialChart from "../../components/specific/charts/radialChart";
+import LineChart from "../../components/specific/charts/lineChart";
+import ColumnChart from "../../components/specific/charts/columnChart";
 import img from "../../assets/images/1.png"
 
 export default function HomeContainer(){

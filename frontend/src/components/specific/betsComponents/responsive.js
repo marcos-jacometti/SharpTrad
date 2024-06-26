@@ -34,6 +34,7 @@ export const detailsMediaStyles = css`
 export const divMediaStyles = css`
     @media ${device.mobile}{
         gap: 1.5vh;
+        justify-content: ${props => props.$justify};
     }
 `;
 

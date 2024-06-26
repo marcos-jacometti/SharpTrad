@@ -1,5 +1,5 @@
 import React from "react";
-import { Background, Container, Details } from "./styles";
+import { Background, Container, Details, DivStyled } from "./styles";
 import { BsGraphUpArrow, BsHourglassSplit, BsAlarmFill } from "react-icons/bs";
 import { IoWarning } from "react-icons/io5";
 
@@ -10,21 +10,21 @@ export default function Bet({}){
                 <BsGraphUpArrow />
             </Background>
             <Details>
-                <div>
+                <DivStyled $justify="center">
                     <h5>GBP/JPY</h5>
-                </div>
-                <div>
+                </DivStyled>
+                <DivStyled>
                     <BsHourglassSplit />
                     <h5>Tempo de Expiração: 5 min</h5>
-                </div>
-                <div>
+                </DivStyled>
+                <DivStyled>
                     <BsAlarmFill />
                     <h5>Horário da Entrada: 12h15</h5>
-                </div>
-                <div>
+                </DivStyled>
+                <DivStyled>
                     <IoWarning />
                     <h5>Utilizar até 2 gales</h5>
-                </div>
+                </DivStyled>
             </Details>
         </Container>
     );
