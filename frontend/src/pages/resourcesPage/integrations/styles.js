@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { containerMediaStyles, integrationMediaStyles, integrationsMediaStyles, spanMediaStyles, svgMediaStyles, titleMediaStyles } from "./responsive";
 
 export const IntegrationsContainer = styled.div`
     display: flex;
+    ${integrationsMediaStyles};
 `;
 
 export const Container = styled.div`
@@ -11,6 +13,7 @@ export const Container = styled.div`
     width: 82vw;
     height: 100vh;
     margin-left: 18vw;
+    ${containerMediaStyles};
 `;
 
 export const Integration = styled.div`
@@ -22,6 +25,7 @@ export const Integration = styled.div`
     height: 60vh;
     width: 30vw;
     gap: 3vh;
+    ${integrationMediaStyles};
 
     .title {
         display: flex;
@@ -33,9 +37,11 @@ export const Integration = styled.div`
         width: 20vw;
         height: 10vh;
         border-bottom: 0.1vh solid #e7e8eb;
+        ${titleMediaStyles};
 
         svg {
             font-size: 1.5vw;
+            ${svgMediaStyles};
         }
     }
 
@@ -43,5 +49,6 @@ export const Integration = styled.div`
         max-width: 20vw;
         line-height: 2.8vh;
         font-size: 0.8vw;
+        ${spanMediaStyles};
     }
 `;

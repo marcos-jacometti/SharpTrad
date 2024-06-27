@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { containerMediaStyles, liveMediaStyles, svgMediaStyles, transmitionsMediaStyles } from "./responsive";
 
 export const TransmitionsContainer = styled.div`
     display: flex;
+    ${transmitionsMediaStyles};
 `;
 
 export const Container = styled.div`
@@ -11,6 +13,7 @@ export const Container = styled.div`
     width: 82vw;
     height: 100vh;
     margin-left: 18vw;
+    ${containerMediaStyles};
 `;
 
 export const Live = styled.div`
@@ -22,9 +25,11 @@ export const Live = styled.div`
     background-color: #fff;
     border-radius: 1vh;
     height: 35vh;
+    ${liveMediaStyles};
 
     svg {
         font-size: 2vw;
         fill: #ff0000;
+        ${svgMediaStyles};
     }
 `;
