@@ -11,6 +11,7 @@ export const notifyContainerMediaStyles = css`
     @media ${device.mobile}{
         margin-left: 0;
         width: 100vw;
+        height: 90.5vh;
     }
 `;
 
