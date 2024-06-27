@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { containerMediaStyles, plansContainerMediaStyles } from "./responsive";
 
 export const PlansContainer = styled.div`
     display: flex;
+    ${plansContainerMediaStyles};
 `;
 
 export const Container = styled.div`
@@ -12,5 +14,6 @@ export const Container = styled.div`
     width: 82vw;
     height: 100vh;
     margin-left: 18vw;
+    ${containerMediaStyles};
 `;
 
