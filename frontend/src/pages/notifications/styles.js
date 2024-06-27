@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { containerMediaStyles, notifyContainerMediaStyles, notifyMediaStyles, svgMediaStyles, titleMediaStyles } from "./responsive";
 
 export const Container = styled.div`
     display: flex;
+    ${containerMediaStyles};
 `;
 
 export const NotifyContainer = styled.div`
@@ -11,6 +13,7 @@ export const NotifyContainer = styled.div`
     width: 82vw;
     height: 100vh;
     margin-left: 18vw;
+    ${notifyContainerMediaStyles};
 `;
 
 export const Notify = styled.div`
@@ -21,6 +24,7 @@ export const Notify = styled.div`
     background-color: #fff;
     border-radius: 1vh;
     height: 90vh;
+    ${notifyMediaStyles};
 
     .title {
         display: flex;
@@ -31,9 +35,11 @@ export const Notify = styled.div`
         width: 68vw;
         height: 10vh;
         border-bottom: 0.1vh solid #e7e8eb;
+        ${titleMediaStyles};
 
         svg {
             font-size: 1.5vw;
+            ${svgMediaStyles};
         }
     }
 `;
