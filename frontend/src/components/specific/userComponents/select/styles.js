@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { containerMediaStyles, optionsMediaStyles, svgMediaStyles } from "./responsive";
 
 export const Container = styled.div`
     display: flex;
@@ -12,6 +13,7 @@ export const Container = styled.div`
 
     svg{
         font-size: 1vw;
+        ${svgMediaStyles};
     }
 
     select {
@@ -20,9 +22,11 @@ export const Container = styled.div`
         width: 10.2vw;
         font-size: 0.8vw;
         outline: none;
+        ${containerMediaStyles};
     }
 
     option {
         font-size: 0.8vw;
+        ${optionsMediaStyles};
     }
 `;

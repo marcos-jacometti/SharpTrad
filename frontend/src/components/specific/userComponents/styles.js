@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { closeMediaStyles, infoMediaStyles, svgMediaStyles, upMediaStyles } from "./responsive";
 
 export const Container = styled.div`
     ${props => props.$visible && `
@@ -25,15 +26,18 @@ export const Up = styled.div`
     border-radius: 2vh;
     position: relative;
     margin-left: 18vw;
+    ${upMediaStyles};
 `;
 
 export const Close = styled.div`
     position: absolute;
     right: 0.8vw;
     top: 1vh;
+    ${closeMediaStyles};
 
     svg {
         font-size: 2vw;
+        ${svgMediaStyles};
     }
 `;
 
@@ -43,6 +47,7 @@ export const Info = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     height: 40vh;
+    ${infoMediaStyles};
     
     button {
         background-color: #3e90f8;

@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { containerMediaStyles, h3MediaStyles, loginMediaStyles, userContainerMediaStyles, userLoginMediaStyles } from "./responsive";
 
 export const UserContainer = styled.div`
     display: flex;
+    ${userContainerMediaStyles};
 `;
 
 export const Container = styled.div`
@@ -11,6 +13,7 @@ export const Container = styled.div`
     width: 82vw;
     height: 100vh;
     margin-left: 18vw;
+    ${containerMediaStyles};
 `;
 
 export const UserLogin = styled.div`
@@ -22,10 +25,12 @@ export const UserLogin = styled.div`
     width: 20vw;
     background-color: #fff;
     border-radius: 1vh;
+    ${userLoginMediaStyles};
 
     h3 {
         max-width: 12vw;
         text-align: center;
+        ${h3MediaStyles};
     }
 
     .login {
@@ -34,6 +39,7 @@ export const UserLogin = styled.div`
         align-items: center;
         justify-content: space-evenly;
         height: 30vh;
+        ${loginMediaStyles};
     }
 `;
 
