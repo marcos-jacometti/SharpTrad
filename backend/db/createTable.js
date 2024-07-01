@@ -1,20 +1,23 @@
+const dotenv = require('dotenv');
+const envConfig = dotenv.config({ path: '../.env' });
 const {dbConnection} = require('./dbConnection');
 
+// Create a table
 const createTableQuery = `
-    CREATE TABLE IF NOT EXISTS orders (
+    CREATE TABLE IF NOT EXISTS users (
         id INT AUTO_INCREMENT PRIMARY KEY,
-        user VARCHAR(100),
+        name VARCHAR(100),
         password VARCHAR(100),
         origin VARCHAR(100)
     )
 `;
 
-dbConnection.query(createTableQuery, (err, result) => {
+dbConnection.query(createTableQuery, (err, results) => {
     if(err){
         console.error(err);
         return;
     }
-    console.log(result);
+    console.log("Table created!", results);
 });
 
 dbConnection.end();
