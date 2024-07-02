@@ -1,5 +1,11 @@
 import { css } from "styled-components";
-import { device } from "../../../../assets/styles/mediaQueries";
+import { device } from "../../../assets/styles/mediaQueries";
+
+export const contentMediaStyles = css`
+    @media ${device.mobile}{
+        height: 20vh;
+    }
+`;
 
 export const containerMediaStyles = css`
     @media ${device.mobile}{

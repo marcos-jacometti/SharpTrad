@@ -1,5 +1,14 @@
 import styled from "styled-components";
-import { containerMediaStyles, optionsMediaStyles, svgMediaStyles } from "./responsive";
+import { containerMediaStyles, contentMediaStyles, optionsMediaStyles, svgMediaStyles } from "./responsive";
+
+export const Content = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+    ${contentMediaStyles};
+`;
 
 export const Container = styled.div`
     display: flex;

@@ -8,7 +8,7 @@ import { handleCreateUser } from "../../../services/controllers/handleCreateUser
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-export default function SignUp({visible, setVisible}){
+export default function SignUp({ visible, setVisible }) {
     const [key, setKey] = useState("");
     const [user, setUser] = useState("");
 
@@ -16,7 +16,7 @@ export default function SignUp({visible, setVisible}){
         const keyValue = e.target.value;
         setKey(keyValue);
 
-        if(keyValue === "sharpbotProUser") {
+        if (keyValue === "sharpbotProUser") {
             setUser("Plano Pro");
         } else if (keyValue === "sharpbotExpertUser") {
             setUser("Plano Expert");
@@ -26,19 +26,24 @@ export default function SignUp({visible, setVisible}){
     };
 
     const notify = (message, type) => {
-        toast(message, {type: type});
+        toast(message, { type: type });
     };
 
     const handleClick = async () => {
-        try{
-            await handleCreateUser();
-            notify("✅ Usuário criado com sucesso");
-        } catch(error) {
-            notify("❌ Falha ao criar o usuário");
+        try {
+            if (key === "sharpbotProUser" || key === "sharpbotExpertUser") {
+                await handleCreateUser();
+                notify("Usuário criado com sucesso", "success");
+            } else {
+                notify("Chave de acesso inválida", "error");
+                return;
+            }
+        } catch (error) {
+            notify("Falha ao criar o usuário", "error");
         }
-    }
+    };
 
-    return(
+    return (
         <Container $visible={visible}>
             <Up>
                 <Close>

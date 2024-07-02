@@ -28,7 +28,7 @@ export default function DesktopHeader() {
             <Logo height="12vh" width="16vw" />
             <nav>
                 <NavBar link="/" svg={<LuHome />} title="Visão geral" />
-                <NavBar link="/bets" svg={<MdOutlineAttachMoney />} title="Lista de Sinais" />
+                <NavBar link="/signals" svg={<MdOutlineAttachMoney />} title="Lista de Sinais" />
                 <NavBar 
                     onClick={() => handleToggle('settings')}
                     svg={<GoGear />}

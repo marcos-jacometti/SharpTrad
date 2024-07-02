@@ -32,7 +32,7 @@ export default function NavMobile({visible, setVisible}){
             </Close>
             <nav>
                 <NavBar link="/" svg={<LuHome />} title="Visão geral" />
-                <NavBar link="/bets" svg={<MdOutlineAttachMoney />} title="Lista de Sinais" />
+                <NavBar link="/signals" svg={<MdOutlineAttachMoney />} title="Lista de Sinais" />
                 <NavBar 
                     onClick={() => handleToggle('settings')}
                     svg={<GoGear />}

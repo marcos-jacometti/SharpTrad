@@ -3,7 +3,7 @@ import { Background, Container, Details, DivStyled } from "./styles";
 import { BsGraphUpArrow, BsHourglassSplit, BsAlarmFill } from "react-icons/bs";
 import { IoWarning } from "react-icons/io5";
 
-export default function Bet({}){
+export default function Bet(){
     return(
         <Container>
             <Background>

@@ -10,11 +10,14 @@ export const handleLogin = async () => {
             password
         });
 
-        console.log('Login successful! User ID:', response.data.userId);
-
-        localStorage.setItem('userId', response.data.userId);
-
-    } catch(err) {
-        console.error(err);
+        if (response.status === 200) {
+            localStorage.setItem('userId', response.data.userId);
+            localStorage.setItem('userType', response.data.userType);
+        } else {
+            throw new Error('Login failed');
+        }
+    } catch (err) {
+        console.error('Login error:', err);
+        throw new Error('Login failed');
     }
 }
