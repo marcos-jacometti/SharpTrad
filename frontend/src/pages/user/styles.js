@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { containerMediaStyles, h3MediaStyles, loginMediaStyles, userContainerMediaStyles, userLoginMediaStyles } from "./responsive";
+import { containerMediaStyles, h3MediaStyles, loginMediaStyles, userContainerMediaStyles, userLoginMediaStyles, toastMediaStyles } from "./responsive";
+import { ToastContainer } from "react-toastify";
 
 export const UserContainer = styled.div`
     display: flex;
@@ -52,5 +53,16 @@ export const Btn = styled.div`
         :hover {
             color: #3e90f8;
         }
+    }
+`;
+
+export const StyledToast = styled(ToastContainer)`
+    &&&.Toastify__toast-container {
+        width: 20vw;
+        ${toastMediaStyles};
+    }
+    .Toastify__toast {
+        background: #fff;
+        color: #000;
     }
 `;

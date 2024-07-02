@@ -1,12 +1,43 @@
 import React, { useState } from "react";
-import { Close, Container, Info, Up } from "./styles";
+import { Close, Container, Info, StyledToast, Up } from "./styles";
 import { IoClose } from "react-icons/io5";
 import Input from "../../common/input";
 import Button from "../../common/button";
-import { FaKey, FaLock, FaUserAlt } from "react-icons/fa";
-import Select from "./select";
+import { FaKey, FaLock, FaUserAlt, FaUserShield } from "react-icons/fa";
+import { handleCreateUser } from "../../../services/controllers/handleCreateUser";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function SignUp({visible, setVisible}){
+    const [key, setKey] = useState("");
+    const [user, setUser] = useState("");
+
+    const handleKey = (e) => {
+        const keyValue = e.target.value;
+        setKey(keyValue);
+
+        if(keyValue === "sharpbotProUser") {
+            setUser("Plano Pro");
+        } else if (keyValue === "sharpbotExpertUser") {
+            setUser("Plano Expert");
+        } else {
+            setUser("");
+        }
+    };
+
+    const notify = (message, type) => {
+        toast(message, {type: type});
+    };
+
+    const handleClick = async () => {
+        try{
+            await handleCreateUser();
+            notify("✅ Usuário criado com sucesso");
+        } catch(error) {
+            notify("❌ Falha ao criar o usuário");
+        }
+    }
+
     return(
         <Container $visible={visible}>
             <Up>
@@ -17,11 +48,12 @@ export default function SignUp({visible, setVisible}){
                 </Close>
                 <h3>Crie agora sua conta!</h3>
                 <Info>
-                    <Input icon={<FaUserAlt />} placeholder="Nome de usuário" type="text" />
-                    <Input icon={<FaLock />} placeholder="Digite sua senha" type="password" />
-                    <Input icon={<FaKey />} placeholder="Digite sua chave de acesso" />
-                    <Select />
-                    <Button title="CRIAR" />
+                    <Input id="name" icon={<FaUserAlt />} placeholder="Nome de usuário" type="text" readOnly={false} />
+                    <Input id="password" icon={<FaLock />} placeholder="Digite sua senha" type="password" readOnly={false} />
+                    <Input icon={<FaKey />} placeholder="Digite sua chave de acesso" readOnly={false} value={key} onChange={handleKey} />
+                    <Input id="type" icon={<FaUserShield />} placeholder="Tipo de usuário" readOnly={true} value={user} />
+                    <Button title="CRIAR" onClick={handleClick} />
+                    <StyledToast position="bottom-left" />
                 </Info>
             </Up>
         </Container>

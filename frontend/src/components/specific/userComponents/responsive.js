@@ -24,6 +24,12 @@ export const svgMediaStyles = css`
 
 export const infoMediaStyles = css`
     @media ${device.mobile}{
-        height: 50vh;
+        height: 55vh;
+    }
+`;
+
+export const toastMediaStyles = css`
+    @media ${device.mobile}{
+        width: 70vw;
     }
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { closeMediaStyles, infoMediaStyles, svgMediaStyles, upMediaStyles } from "./responsive";
+import { closeMediaStyles, infoMediaStyles, svgMediaStyles, toastMediaStyles, upMediaStyles } from "./responsive";
+import { ToastContainer } from "react-toastify";
 
 export const Container = styled.div`
     ${props => props.$visible && `
@@ -55,5 +56,16 @@ export const Info = styled.div`
         :hover {
             color: #000;
         }
+    }
+`;
+
+export const StyledToast = styled(ToastContainer)`
+    &&&.Toastify__toast-container {
+        width: 20vw;
+        ${toastMediaStyles};
+    }
+    .Toastify__toast {
+        background: #fff;
+        color: #000;
     }
 `;

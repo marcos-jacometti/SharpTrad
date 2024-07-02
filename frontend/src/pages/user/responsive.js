@@ -34,3 +34,9 @@ export const loginMediaStyles = css`
         height: 42vh;
     }
 `;
+
+export const toastMediaStyles = css`
+    @media ${device.mobile}{
+        width: 70vw;
+    }
+`;

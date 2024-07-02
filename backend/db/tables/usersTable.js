@@ -1,6 +1,6 @@
 const dotenv = require('dotenv');
-const envConfig = dotenv.config({ path: '../.env' });
-const {dbConnection} = require('./dbConnection');
+const envConfig = dotenv.config({ path: '../../.env' });
+const {dbConnection} = require('../dbConnection');
 
 // Create a table
 const createTableQuery = `
@@ -8,7 +8,7 @@ const createTableQuery = `
         id INT AUTO_INCREMENT PRIMARY KEY,
         name VARCHAR(100),
         password VARCHAR(100),
-        origin VARCHAR(100)
+        type VARCHAR(100)    
     )
 `;
 
