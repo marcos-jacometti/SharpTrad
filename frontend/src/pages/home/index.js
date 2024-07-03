@@ -21,7 +21,7 @@ export default function HomeContainer(){
                         <RadialChart />
                     </Board>
                     <Board $height="40vh" $width="30vw">
-                        <h5>Número de Sinais SharpTrad</h5>
+                        <h5>Número de Sinais Mensais SharpTrad</h5>
                         <LineChart />
                     </Board>
                     <Board $height="40vh" $width="30vw">
