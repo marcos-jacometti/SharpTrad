@@ -11,10 +11,10 @@ export default function Integrations(){
                 <Integration>
                     <div className="title">
                         <BsRobot />
-                        <h2>SharpBot Intelligence</h2>
+                        <h2>SharpTrad Intelligence</h2>
                     </div>
                     <span>
-                        O SharpBot é uma inteligência artificial avançada especializada em sinais de day trading para opções binárias. Projetado para operar com alta performance analítica, o SharpBot utiliza algoritmos sofisticados e análises de dados em tempo real para identificar oportunidades de trading com precisão e eficiência. Com sua capacidade de processar grandes volumes de informações e detectar padrões complexos, o SharpBot oferece aos traders uma vantagem significativa no mercado, proporcionando sinais confiáveis e otimizados para maximizar os lucros.
+                        O SharpTrad é uma inteligência artificial avançada especializada em sinais de day trading para opções binárias. Projetado para operar com alta performance analítica, o SharpTrad utiliza algoritmos sofisticados e análises de dados em tempo real para identificar oportunidades de trading com precisão e eficiência. Com sua capacidade de processar grandes volumes de informações e detectar padrões complexos, o SharpTrad oferece aos traders uma vantagem significativa no mercado, proporcionando sinais confiáveis e otimizados para maximizar os lucros.
                     </span>
                 </Integration>
             </Container>

@@ -16,7 +16,7 @@ export default function MainConfigs(){
                     </div>
                     <Tags>
                         <Tag title="Corretora:" description="Avalon" />
-                        <Tag title="Lista de Sinais:" description="SharpBot Intelligence" />
+                        <Tag title="Lista de Sinais:" description="SharpTrad Intelligence" />
                         <Tag title="Moeda:" description="Real BRL" />
                         <Tag title="Fuso horário:" description="Brasília" />
                         <Tag title="Idioma:" description="Português" />
