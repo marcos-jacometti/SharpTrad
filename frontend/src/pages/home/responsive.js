@@ -34,6 +34,7 @@ export const boardMediaStyles = css`
     @media ${device.mobile}{
         height: 48vh;
         width: 90vw;
+        background: url(${props => props.$backgroundMobile}) center / cover;
 
         h5 {
             min-width: 60vw;

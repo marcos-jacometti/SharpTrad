@@ -1,8 +1,11 @@
 import React from "react";
 import { LogoContainer } from "./styles";
+import { Link } from "react-router-dom";
 
 export default function Logo({height, width}){
     return(
-        <LogoContainer height={height} width={width} />
+        <Link to="/">
+            <LogoContainer height={height} width={width} />
+        </Link>
     );
 }

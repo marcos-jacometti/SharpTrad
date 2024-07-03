@@ -34,7 +34,7 @@ export default function LineChart() {
 
     const series = [{
         name: 'Sinais',
-        data: [300, 600, 900, 1200, 1500, 1800]
+        data: [0, 0, 0, 0, 0, 300]
     }];
 
     return (

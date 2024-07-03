@@ -12,8 +12,8 @@ import { BiSupport } from "react-icons/bi";
 
 export default function NavMobile({visible, setVisible}){
     const [visibility, setVisibility] = useState({
-        settings: false,
-        resources: true
+        settings: true,
+        resources: false
     });
 
     const handleToggle = (section) => {

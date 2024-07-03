@@ -3,8 +3,8 @@ import { device } from "../../../assets/styles/mediaQueries";
 
 export const buttonMediaStyles = css`
     @media ${device.mobile}{
-        width: 35vw;
+        width: 50vw;
         height: 5vh;
-        font-size: 3.5vw;
+        font-size: 3.8vw;
     }
 `;

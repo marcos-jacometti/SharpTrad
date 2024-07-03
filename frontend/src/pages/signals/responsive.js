@@ -11,7 +11,7 @@ export const gamesContentMediaStyles = css`
     @media ${device.mobile}{
         margin-left: 0;
         width: 100vw;
-        height: 100vh;
+        height: 90.5vh;
     }
 `;
 

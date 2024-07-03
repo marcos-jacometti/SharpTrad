@@ -8,16 +8,16 @@ export const ButtonContainer = styled.div`
         background-color: transparent;
         border: none;
         height: 4vh;
-        width: 6vw;
+        width: 12vw;
         background-color: #3e90f8;
         border-radius: 1vh;
-        font-size: 0.8vw;
+        font-size: 0.9vw;
         cursor: pointer;
         font-weight: bold;
         ${buttonMediaStyles};
 
         &:hover { 
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 10px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.4), 0 8px 8px 0 rgba(0, 0, 0, 0.3);
         }
 
         .link {

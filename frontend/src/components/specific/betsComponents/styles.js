@@ -27,7 +27,6 @@ export const Background = styled.div`
     
     svg {
         stroke-width: 0.1vh;
-        color: green;
         font-size: 2.2vw;
         ${svgMediaStyles};
     }

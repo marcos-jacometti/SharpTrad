@@ -12,8 +12,8 @@ import HelpCenter from "../../../specific/headerComponents/helpCenter";
 
 export default function DesktopHeader() {
     const [visibility, setVisibility] = useState({
-        settings: false,
-        resources: true
+        settings: true,
+        resources: false
     });
 
     const handleToggle = (section) => {

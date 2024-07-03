@@ -44,7 +44,7 @@ export default function ColumnChart() {
 
     const series = [{
         name: 'Sinais',
-        data: [540, 360, 900]
+        data: [3, 5, 10]
     }];
 
     return (

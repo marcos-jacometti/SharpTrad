@@ -17,14 +17,14 @@ export default function Plans(){
             <Header />
             <Container>
                 <PayContainer title="FREE" 
-                    items={["03 Sinais Diários", "SharBot Intelligence", "Suporte Exclusivo"]}
+                    items={["03 Sinais Diários", "SharpTrad Intelligence", "Suporte Exclusivo"]}
                 />
                 <PayContainer title="PRO" h4="12x de" h2="R$33,32" h3="à vista R$399,99" 
-                    items={["05 Sinais Diários", "SharBot Intelligence", "Gerenciamento de Banca", "Estratégia Sharp", "Suporte Exclusivo"]}
+                    items={["05 Sinais Diários", "SharpTrad Intelligence", "Gerenciamento de Banca", "Estratégia Sharp", "Suporte Exclusivo"]}
                     button={<Button onClick={handleBtnClick} title="ASSINAR"/>}
                 />
                 <PayContainer title="EXPERT" h4="12x de" h2="R$41,66" h3="à vista R$499,99" 
-                    items={["10 Sinais Diários", "SharBot Intelligence", "Gerenciamento de Banca", "Estratégia Sharp", "Suporte Exclusivo"]}
+                    items={["10 Sinais Diários", "SharpTrad Intelligence", "Gerenciamento de Banca", "Estratégia Sharp", "Suporte Exclusivo"]}
                     button={<Button onClick={handleBtnClick} title="ASSINAR"/>}
                 />
                 {visible && <Checkout visible={visible} setVisible={setVisible} />}
