@@ -2,7 +2,6 @@ const dotenv = require('dotenv');
 const envConfig = dotenv.config({ path: '../../.env' });
 const {dbConnection} = require('../dbConnection');
 
-// Create a table
 const createTableQuery = `
     CREATE TABLE IF NOT EXISTS users (
         id INT AUTO_INCREMENT PRIMARY KEY,

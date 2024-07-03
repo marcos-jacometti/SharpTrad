@@ -2,7 +2,6 @@ const dotenv = require('dotenv');
 const envConfig = dotenv.config({ path: '../.env' });
 const { connection } = require('./dbConnection');
 
-// Create a db
 const createDatabaseQuery = `CREATE DATABASE IF NOT EXISTS ${process.env.DB_NAME}`;
 
 connection.query(createDatabaseQuery, (err, results) => {
