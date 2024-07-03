@@ -3,6 +3,7 @@ const cors = require("cors");
 const { dbConnection } = require("./db/dbConnection");
 const usersControllers = require("./controllers/usersControllers");
 const loginControllers = require("./controllers/loginControllers");
+const signalsAPI = require("./api/signalsAPI");
 
 const app = express();
 app.use(cors());
@@ -19,6 +20,8 @@ dbConnection.connect((err) => {
 app.use('/users', usersControllers);
 
 app.use('/login', loginControllers);
+
+app.use('/api', signalsAPI);
 
 app.get('/', (req, res) => {
     res.send('Node server is working');

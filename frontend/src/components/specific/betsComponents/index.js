@@ -1,17 +1,38 @@
-import React from "react";
-import { Background, Container, Details, DivStyled } from "./styles";
-import { BsGraphUpArrow, BsHourglassSplit, BsAlarmFill } from "react-icons/bs";
-import { IoWarning } from "react-icons/io5";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Background, Container, Details, DivStyled } from './styles';
+import { BsGraphUpArrow, BsGraphDownArrow, BsHourglassSplit, BsAlarmFill } from 'react-icons/bs';
+import { IoWarning } from 'react-icons/io5';
 
-export default function Bet(){
-    return(
+export default function Bet({ index }) {
+    const [signal, setSignal] = useState(null);
+
+    useEffect(() => {
+        axios.get('/api/signals')
+            .then(response => {
+                if (response.data.length > index) {
+                    setSignal(response.data[index]);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching signals:', error);
+            });
+    }, [index]);
+
+    if (!signal) {
+        return <div>Loading...</div>;
+    }
+
+    const { command, coin, hour, date } = signal;
+
+    return (
         <Container>
             <Background>
-                <BsGraphUpArrow />
+                {command === 'buy' ? <BsGraphUpArrow /> : <BsGraphDownArrow />}
             </Background>
             <Details>
                 <DivStyled $justify="center">
-                    <h5>GBP/JPY</h5>
+                    <h5>{coin}</h5>
                 </DivStyled>
                 <DivStyled>
                     <BsHourglassSplit />
@@ -19,7 +40,7 @@ export default function Bet(){
                 </DivStyled>
                 <DivStyled>
                     <BsAlarmFill />
-                    <h5>Horário da Entrada: 12h15</h5>
+                    <h5>Horário da Entrada: {hour}</h5>
                 </DivStyled>
                 <DivStyled>
                     <IoWarning />
