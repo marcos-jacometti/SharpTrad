@@ -4,11 +4,17 @@ import { Background, Container, Details, DivStyled } from './styles';
 import { BsGraphUpArrow, BsGraphDownArrow, BsHourglassSplit, BsAlarmFill } from 'react-icons/bs';
 import { IoWarning } from 'react-icons/io5';
 
+// Função auxiliar para formatar a hora
+const formatTime = (timeString) => {
+    const [hour, minute] = timeString.split(':');
+    return `${hour}:${minute}`;
+};
+
 export default function Bet({ index }) {
     const [signal, setSignal] = useState(null);
 
     useEffect(() => {
-        axios.get('/api/signals')
+        axios.get('http://localhost:3000/api/signals')
             .then(response => {
                 if (response.data.length > index) {
                     setSignal(response.data[index]);
@@ -28,7 +34,7 @@ export default function Bet({ index }) {
     return (
         <Container>
             <Background>
-                {command === 'buy' ? <BsGraphUpArrow /> : <BsGraphDownArrow />}
+                {command === 'buy' ? <BsGraphUpArrow color="green" /> : <BsGraphDownArrow color="red" />}
             </Background>
             <Details>
                 <DivStyled $justify="center">
@@ -40,7 +46,7 @@ export default function Bet({ index }) {
                 </DivStyled>
                 <DivStyled>
                     <BsAlarmFill />
-                    <h5>Horário da Entrada: {hour}</h5>
+                    <h5>Horário da Entrada: {formatTime(hour)}</h5>
                 </DivStyled>
                 <DivStyled>
                     <IoWarning />

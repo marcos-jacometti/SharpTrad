@@ -1,6 +1,6 @@
 const dotenv = require('dotenv');
-const envConfig = dotenv.config({ path: '../../.env' });
-const { dbConnection } = require('../dbConnection');
+const envConfig = dotenv.config({ path: '../.env' });
+const { dbConnection } = require('../db/dbConnection');
 
 const insertSignalQuery = `
     INSERT INTO signals (command, coin, hour, date)
@@ -8,8 +8,8 @@ const insertSignalQuery = `
 `;
 
 const signals = [
-    { command: 'buy', coin: 'BTC', hour: '12:00:00', date: '2024-07-03' },
-    { command: 'sell', coin: 'ETH', hour: '15:30:00', date: '2024-07-03' },
+    { command: 'sell', coin: 'EUR/JPY', hour: '16:45:00', date: '2024-07-04' },
+    { command: 'sell', coin: 'EUR/JPY', hour: '18:10:00', date: '2024-07-04' },
 ];
 
 signals.forEach(signal => {
