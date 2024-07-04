@@ -4,7 +4,6 @@ import { Background, Container, Details, DivStyled } from './styles';
 import { BsGraphUpArrow, BsGraphDownArrow, BsHourglassSplit, BsAlarmFill } from 'react-icons/bs';
 import { IoWarning } from 'react-icons/io5';
 
-// Função auxiliar para formatar a hora
 const formatTime = (timeString) => {
     const [hour, minute] = timeString.split(':');
     return `${hour}:${minute}`;
