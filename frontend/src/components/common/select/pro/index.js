@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Container, Content } from "./styles";
+import { Container, Content } from "../styles";
 import { FaRobot } from "react-icons/fa";
-import Button from "../button";
+import Button from "../../button";
 
-export default function Select() {
+export default function SelectPro() {
     const [value, setValue] = useState("");
 
     const handleChange = (event) => {
@@ -12,11 +12,11 @@ export default function Select() {
 
     const getButtonLink = () => {
         if (value === "1") {
-            return "link-x";
+            return "https://pay.kirvano.com/e89706bf-26ad-406e-837e-cde7b19faaa5";
         } else if (value === "2") {
-            return "link-y";
+            return "https://pay.kirvano.com/e89706bf-26ad-406e-837e-cde7b19faaa5";
         }
-        return "";
+        return "https://pay.kirvano.com/e89706bf-26ad-406e-837e-cde7b19faaa5";
     };
 
     return (
