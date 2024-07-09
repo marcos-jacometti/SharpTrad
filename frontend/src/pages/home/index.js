@@ -15,7 +15,17 @@ export default function HomeContainer(){
             <Content>
                 <Boards>
                     <Link to="https://trade.avalonbroker.io/register?aff=415320&aff_model=revenue&afftrack="><Announcement /></Link>
-                    <Board $height="50vh" $width="50vw"></Board>
+                    <Board $height="50vh" $width="50vw">
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src={`https://www.youtube.com/embed/yj0BK53E7_o?autoplay=1&loop=1&playlist=yj0BK53E7_o`}
+                            frameBorder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                        />
+                    </Board>
                     <Board $height="50vh" $width="17vw">
                         <h5>Assertividade dos últimos 30 dias (Sinais SharpTrad)</h5>
                         <RadialChart />

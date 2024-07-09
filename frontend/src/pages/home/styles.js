@@ -54,4 +54,8 @@ export const Board = styled.div`
         max-width: 14vw;
         text-align: center;
     }
+
+    iframe {
+        border-radius: 1vh;
+    }
 `;
