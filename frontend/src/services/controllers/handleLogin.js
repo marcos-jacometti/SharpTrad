@@ -5,7 +5,7 @@ export const handleLogin = async () => {
         const name = document.getElementById("name").value;
         const password = document.getElementById("password").value;
 
-        const response = await axios.post("http://localhost:3000/login/login", {
+        const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login/login`, {
             name,
             password
         });

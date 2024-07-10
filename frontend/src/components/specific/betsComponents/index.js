@@ -13,7 +13,7 @@ export default function Bet({ index }) {
     const [signal, setSignal] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/signals')
+        axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/signals`)
             .then(response => {
                 if (response.data.length > index) {
                     setSignal(response.data[index]);
