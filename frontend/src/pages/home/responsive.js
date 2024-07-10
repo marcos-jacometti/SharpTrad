@@ -1,5 +1,6 @@
 import { css } from "styled-components";
 import { device } from "../../assets/styles/mediaQueries";
+import img from "../../assets/images/mobileAnnounce.png";
 
 export const containerMediaStyles = css`
     @media ${device.mobile} {
@@ -27,6 +28,7 @@ export const boardsMediaStyles = css`
 export const annoucementMediaStyles = css`
     @media ${device.mobile}{
         width: 90vw;
+        background: url(${img}) center / cover;
     }
 `;
 
