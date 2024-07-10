@@ -8,8 +8,9 @@ const insertSignalQuery = `
 `;
 
 const signals = [
-    { command: 'sell', coin: 'EUR/JPY', hour: '16:45:00', date: '2024-07-04' },
-    { command: 'sell', coin: 'EUR/JPY', hour: '18:10:00', date: '2024-07-04' },
+    { command: 'sell', coin: 'EUR/JPY', hour: '11:30:00', date: '2024-07-08' },
+    { command: 'buy', coin: 'GBP/JPY', hour: '11:50:00', date: '2024-07-08' },
+    { command: 'buy', coin: 'EUR/JPY', hour: '13:25:00', date: '2024-07-08' },
 ];
 
 signals.forEach(signal => {

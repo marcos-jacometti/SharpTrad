@@ -5,18 +5,20 @@ const connection = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT
 });
 
 const dbConnection = mysql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT
 });
 
 connection.connect((err) => {
     if(err){
-        console.error(err);
+        console.error('Connection error:', err);
         return;
     }
     console.log("Connection was a success");
@@ -24,10 +26,10 @@ connection.connect((err) => {
 
 dbConnection.connect((err) => {
     if(err){
-        console.error(err);
+        console.error('DB Connection error:', err);
         return;
     }
-    console.log("dbconnection was a success");
+    console.log("DB connection was a success");
 });
 
 module.exports = {connection, dbConnection};
