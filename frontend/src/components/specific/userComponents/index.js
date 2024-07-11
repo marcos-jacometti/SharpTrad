@@ -11,6 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function SignUp({ visible, setVisible }) {
     const [key, setKey] = useState("");
     const [user, setUser] = useState("");
+    const [name, setName] = useState("");
+    const [password, setPassword] = useState("");
 
     const handleKey = (e) => {
         const keyValue = e.target.value;
@@ -32,7 +34,7 @@ export default function SignUp({ visible, setVisible }) {
     const handleClick = async () => {
         try {
             if (key === "sharpbotProUser" || key === "sharpbotExpertUser") {
-                await handleCreateUser();
+                await handleCreateUser(name, password, user);
                 notify("Usuário criado com sucesso", "success");
             } else {
                 notify("Chave de acesso inválida", "error");
@@ -53,10 +55,38 @@ export default function SignUp({ visible, setVisible }) {
                 </Close>
                 <h3>Crie agora sua conta!</h3>
                 <Info>
-                    <Input id="name" icon={<FaUserAlt />} placeholder="Nome de usuário" type="text" readOnly={false} />
-                    <Input id="password" icon={<FaLock />} placeholder="Digite sua senha" type="password" readOnly={false} />
-                    <Input icon={<FaKey />} placeholder="Digite sua chave de acesso" readOnly={false} value={key} onChange={handleKey} />
-                    <Input id="type" icon={<FaUserShield />} placeholder="Tipo de usuário" readOnly={true} value={user} />
+                    <Input
+                        id="name"
+                        icon={<FaUserAlt />}
+                        placeholder="Nome de usuário"
+                        type="text"
+                        readOnly={false}
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                    <Input
+                        id="password"
+                        icon={<FaLock />}
+                        placeholder="Digite sua senha"
+                        type="password"
+                        readOnly={false}
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    <Input
+                        icon={<FaKey />}
+                        placeholder="Digite sua chave de acesso"
+                        readOnly={false}
+                        value={key}
+                        onChange={handleKey}
+                    />
+                    <Input
+                        id="type"
+                        icon={<FaUserShield />}
+                        placeholder="Tipo de usuário"
+                        readOnly={true}
+                        value={user}
+                    />
                     <Button title="CRIAR" onClick={handleClick} />
                     <StyledToast position="bottom-left" />
                 </Info>
