@@ -6,6 +6,8 @@ export const handleCreateUser = async () => {
         const password = document.getElementById("password").value;
         const type = document.getElementById("type").value;
 
+        console.log('frontend:', { name, password, type });
+
         const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/users/createUser`, {
             name,
             password,
