@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 
 router.post('/createUser', async (req, res) => {
     const { name, password, type } = req.body;
-    console.log('backend:', req.body);
+    console.log('Dados recebidos no backend:', req.body); // Log para depuração
 
     try {
         const hashedPassword = await bcrypt.hash(password, 10);
@@ -27,3 +27,5 @@ router.post('/createUser', async (req, res) => {
         res.status(500).send('Internal server error');
     }
 });
+
+module.exports = router;
